@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project - COMP2132</title>  
+    <meta charset="UTF-8">
+     
+    <link rel="stylesheet" href="styles/styles.css">   
+    <script src="scripts/project.js" defer></script>
+    </head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Dice Game</h1>
+        </header>
+        <main> 
+            <section>
+                <div class="container">
+                    <!--<h1>Let's Play</h1>--> 
+                    <div class="flex">
+                        <div class="child-box">
+                            <p id="this-round1">Score This Round: 0</p>
+                            <p id="total-score1">Total Score: 0</p>
+                            
+                        </div>
+                        <div class="child-box" id="line1">
+                            <div class="dice">
+                                <img class="img1" src="images/dice1.png">
+                            </div>
+                            <div class="dice">
+                                <img class="img2" src="images/dice1.png">
+                            </div>
+                            <div>
+                                <img src="images/player1.png" alt="dice player1" class="w50">
+                            </div>
+                            <p class="Player1">You</p>
+
+                        </div>  
+                        <div class="child-box" id="line2">
+                            <div class="dice">
+                                <img class="img3" src="images/dice1.png">
+                            </div>
+                            <div class="dice">
+                                <img class="img4" src="images/dice1.png">
+                            </div>
+                            <div>
+                                <img src="images/player2.jpg" alt="building with cylindrical black roof" class="w50">
+                            </div>
+                            <p class="Player2">Computer</p>
+                        </div>
+                        <div class="child-box">
+                            <p id="this-round2">Score This Round: 0</p>
+                            <p id="total-score2">Total Score: 0 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dno">
+                    <div class="container bottom">
+                        <button id="new-game"class="butn" onclick="rollTheDice()">Roll the Dice</button>
+                        <button  class="butn" onclick="newGame()">New Game</button>
+                    </div>
+                </div>
+            </section>
+                     
+             <!--The popup-->
+        
+             <section id="pop-up">
+                <button id="btn-close">&#10005;</button>
+                <h2>You Win!!</h2>                
+            </section> 
+      
+    
+        </main>
+        <footer>
+            <p>COMP2132 - Davorka</p>
+        </footer>
+    </div>    
+</body>
+</html>

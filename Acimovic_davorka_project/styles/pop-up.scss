@@ -1,0 +1,44 @@
+
+
+#pop-up{
+   width:300px;
+   padding:10px;
+   background-color: $main-color;
+   color:#4ecca3;
+   text-align: center;
+   border:solid 1px black;
+   border-radius: 10px;
+   box-shadow:0px 0px 5px yellow, 5px 5px 5px black;
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%, -50%);
+   /*
+   animate this opacity property
+   from 0 to 1    
+   */
+   opacity:0;
+   /* 
+   ensure pointer events will go 'through' this section tag 
+   since it might  otherwise overlap the buttons and make them unclickable
+   */
+   pointer-events: none;
+
+   z-index:1000;
+}
+#btn-close{
+   position:absolute;
+   top:10px;
+   right:10px;
+   font-weight: bold;
+   background-color: $second-color;
+   color:inherit;
+   border:solid 2px $light-color;
+   cursor:pointer;
+   /* ensure pointer events will apply to the button */
+   pointer-events: all;
+}
+#btn-close:hover{
+   background-color: $main-color;
+   border-color: $second-color;
+}
